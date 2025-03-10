@@ -40,13 +40,15 @@ class Quadtree {
 			if (y > ym) {
 				index += 2
 				y0 = ym
-			} else {
+			}
+			else {
 				y1 = ym
 			}
 			if (x > xm) {
 				index += 1
 				x0 = xm
-			} else {
+			}
+			else {
 				x1 = xm
 			}
 		}
@@ -86,7 +88,8 @@ class Quadtree {
 			const [ x, y ] = target
 			if (x < x0 || x1 < x || y < y0 || y1 < y) {
 				index = -1
-			} else {
+			}
+			else {
 				index = 0
 				if (y > ym) {
 					index += 2
